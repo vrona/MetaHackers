@@ -1,0 +1,260 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IMetaHackerMotherBase",
+  "sourceName": "contracts/interfaces/IMetaHackerMotherBase.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "checkStatusOfGen",
+      "outputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "_generation",
+          "type": "uint8"
+        }
+      ],
+      "name": "getSkillz",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "bravery",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "humor",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "imagination",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "intelligence",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "leadership",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "metaversal",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "pressureResistance",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "social",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "teamworking",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "technological",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IMetaHackerDNA.Skills",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "_generation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_gene",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_traitId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTraitgender",
+      "outputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Gender",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "_generation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_gene",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_traitId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTraitname",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "_generation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_gene",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_traitId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTraitsvg",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "_generation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "eachSkill",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "uploadSkills",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "_generation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "gene",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "traitvarId",
+          "type": "uint256[]"
+        },
+        {
+          "components": [
+            {
+              "internalType": "enum IMetaHackerDNA.Generation",
+              "name": "generation",
+              "type": "uint8"
+            },
+            {
+              "internalType": "enum IMetaHackerDNA.Gender",
+              "name": "gender",
+              "type": "uint8"
+            },
+            {
+              "internalType": "string",
+              "name": "gene",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "variation",
+              "type": "uint256"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "svg",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct IMetaHackerDNA.Traits[]",
+          "name": "_traits",
+          "type": "tuple[]"
+        }
+      ],
+      "name": "uploadTraits",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

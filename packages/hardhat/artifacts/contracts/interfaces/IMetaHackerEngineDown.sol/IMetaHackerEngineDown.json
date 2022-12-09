@@ -1,0 +1,249 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IMetaHackerEngineDown",
+  "sourceName": "contracts/interfaces/IMetaHackerEngineDown.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "generation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "generateSVG",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "generation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRanking",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "rank",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "_generation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTokenTraits",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "backgColor",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "bodyColor",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "backgShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "bodyShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "eyesbShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "mouthShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "hairShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "glassShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "clothShape",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct IMetaHackerDNA.Genes",
+          "name": "mhtraits",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "generation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTraithash",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "traithash",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum IMetaHackerDNA.Generation",
+          "name": "generation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "seed",
+          "type": "uint256"
+        }
+      ],
+      "name": "mhEngineering",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "backgColor",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "bodyColor",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "backgShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "bodyShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "eyesbShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "mouthShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "hairShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "glassShape",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8",
+              "name": "clothShape",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct IMetaHackerDNA.Genes",
+          "name": "rmht",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "seed",
+          "type": "uint256"
+        }
+      ],
+      "name": "random",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
